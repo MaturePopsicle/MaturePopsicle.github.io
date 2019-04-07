@@ -1,43 +1,63 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Jekyll configuration
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Sam X
-email: sam.xiang@foxmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+name: Sam Xiang
+description: Engineer's self-cultivation
 
-# Build settings
+# Url is currently only used only for the RSS feed in feed.xml
+url: https://maturepopsicle.github.io/
+#url: http://localhost:4000
+
+# For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
+baseurl: ''
+
+author: Sam 
+copyright: 2019-2119
+
+share:
+  facebook: true
+  twitter: true
+  #gplus: true
+  #linkedin: true
+  #pinterest: true
+  email: true
+
+social:
+  github: 
+  stackoverflow: ''
+  linkedin:
+  instagram: ''
+  lastfm: ''
+  rss: feed.xml
+
+# Google Analytics key, leave blank to ignore
+google_analytics_key:
+# Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
+yandex_metrica:
+
+
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
+disqus: 
+comments: false
+
+permalink: /:year/:month/:title/
+
+# Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
+#paginate: 3
+
+#highlighter: rouge
+
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: true
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude: ['README.md', 'LICENSE']
+
+
+# Sidebar settings
+sidebar: true                           # 是否开启侧边栏.
+sidebar-about-description: "stay hungru, stay foolish."
+#sidebar-avatar:/img/avatar-by.JPG      
+# 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
